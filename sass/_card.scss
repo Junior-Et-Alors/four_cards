@@ -1,0 +1,24 @@
+main{
+    display: flex;
+    justify-content: center;
+    .card{
+        width: 280px;
+        height: 200px;
+        border-top: #56aaf1 solid 4px;
+        border-radius: 5px;
+        padding: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        box-shadow: 1px 7px 14px 0 #dce3e9;
+        h2{
+            font-weight: 700;
+        }
+        p{
+            color: #d8d7da;
+        }
+        .logo{
+            display: flex;
+            justify-content: end;
+        }
+        
+    }
+}
