@@ -1,0 +1,19 @@
+{
+  "name": "four_cards",
+  "version": "1.0.0",
+  "description": "Frontend training 1",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Junior-Et-Alors/four_cards.git"
+  },
+  "author": "Brigitte Gabaud",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Junior-Et-Alors/four_cards/issues"
+  },
+  "homepage": "https://github.com/Junior-Et-Alors/four_cards#readme"
+}
