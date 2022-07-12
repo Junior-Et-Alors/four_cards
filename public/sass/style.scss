@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+h1,h2,h3,h4,h5,h6,p,span{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+header{
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: hsl(234, 12%, 34%);
+  h2{
+    font-weight: 200;
+    font-size: 32px;
+  }
+  h1{
+    font-weight: 600;
+    font-size: 32px;
+  }
+  span{
+    font-weight: 200;
+    font-size: 15px;
+  }
+}
+
+.cards__container{
+    $card_padding:20px;
+    $card_width:300px;
+    $card_height:200px;
+    $card_h2_color:#474747;
+    margin-top: 20px;
+    @mixin card_police_and_shadow($borderTopColor) {
+      font-family: 'Poppins', sans-serif, Helvetica;
+      box-shadow: 1px 7px 14px 0 #dce3e9;
+      border-top: $borderTopColor solid 4px;
+      border-radius: 5px;
+    }
+    // Card karma
+    & .card__karma {
+        width: $card_width;
+        height: $card_height;
+        padding: $card_padding;
+        position: absolute;
+        top: 500px;
+        left: 50%;
+        transform: translate(-50%);
+        margin: auto;
+        @include card_police_and_shadow(hsl(34, 97%, 64%));
+        &__text{
+          height: 80px;
+          margin-bottom: 50px;
+          color: #818083;
+          & h2{
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: $card_h2_color;
+          }
+        }
+        &__img{
+          display: flex;
+          justify-content: flex-end;
+          margin-bottom: 10px;
+        }
+        // border-top: 4px solid hsl(34, 97%, 64%);
+        // border-radius: 10px;
+        // box-shadow: 0 3px 20px  hsl(229, 6%, 66%);
+        // h2 {
+        //     color: hsl(234, 12%, 34%);
+        // }
+        // p{
+        //     color: hsl(229, 6%, 66%);
+        //     font-weight: 400;
+        // }
+    }
+    // .icon  {
+    //     align-self: flex-end;
+    //     width: 100px;
+    //     height: 100px;
+    //     img{
+    //         width: 100px;
+    //         height: 100px; 
+    //     }
+    // }
+}

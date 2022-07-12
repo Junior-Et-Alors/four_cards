@@ -4,7 +4,7 @@
   "description": "Frontend training 1",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+    "sass": "sass --watch ./public/sass/style.scss:./public/css/style.min.css --style compressed"
   },
   "repository": {
     "type": "git",
