@@ -1,7 +1,7 @@
-main{
+.cards__container{
     display: flex;
-    justify-content: space-around;
-    .card{
+    justify-content: end;
+    .card__calculator{
         width: 280px;
         height: 200px;
         border-top: #56aaf1 solid 4px;
@@ -10,8 +10,13 @@ main{
         margin-top:125px;
         font-family: Arial, Helvetica, sans-serif;
         box-shadow: 1px 7px 14px 0 #dce3e9;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: 10%;
         h2{
             font-weight: 700;
+            margin-bottom: 10px;
         }
         p{
             color: #d8d7da;
@@ -19,7 +24,9 @@ main{
         .logo{
             display: flex;
             justify-content: end;
+
         }
         
     }
+
 }
